@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>Insert title here</title>
+<style>
+*{
+		margin:0px;
+		padding:0px;
+}
+body{
+	color : #353535;
+}
+div.top{
+	width : 357px;
+	height : 45px;
+	background-color : #FFBB00;
+	padding : 5px;
+	padding-right : 10px;
+}
+#title{
+	width : 50px;
+	height : 50px;
+	line-height : 45px;
+	padding-left : 160px;
+	font-weight : bold;
+	float : left;
+}
+#wheel{
+	width : 35px;
+	height : 31px;
+	float : right;
+	margin-top : 7px;
+}
+div.profile{
+	width : 340px;
+	height : 210px;
+	padding: 10px;
+}
+#myimg{
+	width : 100px;
+	height : 100px;
+	margin-left : 130px;
+	margin-top : 33px;
+	margin-bottom : 10px;
+}
+#name{
+	width : 110px;
+	height : 30px;
+	padding-left : 125px;
+	float:left;
+}
+#direction{
+	width : 45px;
+	height : 25px;
+	float:right;
+	margin-right : 50px;
+}
+#directionimg{
+	width : 20px;
+	height : 25px;
+}
+div.menu{
+	width : 371px;
+	height : 80px;
+	background-color : #FFBB00;
+}
+#friends{
+	width : 90px;
+	height : 80px;
+	border: 1px solid white;
+	float : left
+}
+#friendsicon{
+	width : 70px;
+	height : 38px;
+	margin-top : 10px;
+	margin-left : 7px;
+}
+#fretitle{
+	width : 88px;
+	height : 15px;
+	text-align : center;
+	font-weight : bold;
+	font-size : 15px;
+}
+#messages{
+	width : 91px;
+	height : 80px;
+	border: 1px solid white;
+	float : right ;
+	float : left;
+}
+#msgicon{
+	width : 48px;
+	height : 36px;
+	margin-top : 13px;
+	margin-left : 20px;
+}
+#msgtitle{
+	width : 88px;
+	height : 10px;
+	line-height : 15px;
+	text-align : center;
+	font-weight : bold;
+	font-size : 15px;
+}
+#stamps{
+	width : 91px;
+	height : 80px;
+	border: 1px solid white;
+	float : right ;
+	float : left;
+}
+#stampicon{
+	width : 75px;
+	height : 40px;
+	margin-top : 10px;
+	margin-left : 7px;
+}
+#stamptitle{
+	width : 88px;
+	height : 10px;
+	line-height : 15px;
+	text-align : center;
+	font-weight : bold;
+	font-size : 15px;
+}
+div.mainbox{
+	width : 370px;
+	height : 170px;
+}
+#events{
+	width : 91px;
+	height : 80px;
+	border: 1px solid white;
+	float : right ;
+}
+#eventicon{
+	width : 40px;
+	height : 35px;
+	margin-left : 25px;
+	margin-top : 10px;
+}
+#eventtitle{
+	width : 90px;
+	height : 10px;
+	line-height : 23px;
+	text-align : center;
+	font-weight : bold;
+	font-size : 15px;
+}
+div.info{
+	width : 367px;
+	height : 30px;
+	line-height : 25px;
+	padding-left : 5px;
+	background-color : #FFBB00;
+	font-size : 15px;
+	color : white;
+}
+div.gong{
+	width : 176px;
+	height : 60px;
+	background-color : gray;
+	border : 1px solid white;
+	float : left;
+	padding : 5px;
+}
+#gongtitle{
+	width : 80px;
+	height : 50px;
+	line-height : 60px;
+	margin-left : 10px;
+	float : left;
+}
+#gongimg{
+	width : 30px;
+	height : 20px;
+	float : right;
+	padding-top : 10px;
+	padding-right : 5px;
+}
+#gongimg2{
+	width : 30px;
+	height : 40px;
+	
+}
+div.qna{
+	width : 170px;
+	height : 60px;
+	background-color : gray;
+	border : 1px solid white;
+	float : left;
+	padding : 5px;
+
+}
+#qnatitle{
+	width : 100px;
+	height : 50px;
+	line-height : 60px;
+	margin-left : 10px;
+	float : left;
+}
+#qnaimg{
+	width : 30px;
+	height : 20px;
+	float : right;
+	padding-top : 10px;
+	padding-right : 5px;
+	float : right;
+}
+div.invent{
+	width : 176px;
+	height : 60px;
+	background-color : gray;
+	border : 1px solid white;
+	float : left;
+	padding : 5px;
+}
+#inventtitle{
+	width : 100px;
+	height : 50px;
+	line-height : 60px;
+	margin-left : 10px;
+	float : left;
+}
+#inventimg{
+	width : 30px;
+	height : 20px;
+	float : right;
+	padding-top : 10px;
+	padding-right : 5px;
+	float : right;
+}
+div.service{
+	width : 170px;
+	height : 60px;
+	background-color : gray;
+	border : 1px solid white;
+	float : right;
+	padding : 5px;
+}
+#servicetitle{
+	width : 100px;
+	height : 50px;
+	line-height : 60px;
+	margin-left : 10px;
+	float : left;
+}
+#serviceimg{
+	width : 30px;
+	height : 20px;
+	float : right;
+	padding-top : 10px;
+	padding-right : 5px;
+	float : right;
+}
+
+div.bottom{
+	width : 370px;
+	height : 80px;
+	padding : 0px;
+	background-color : #FFBB00;
+}
+#homeconbox{
+	width : 72px;
+	height : 62px;
+	border: 1px solid white;
+	float : left;
+	padding-left : 22px;
+	padding-top : 10px;
+	}
+#homecon{
+	width : 48px;
+	height: 35px;
+	margin-right : 16px;
+}
+#hometext{
+	width : 70px;
+	margin-left : 17px;
+	font-size : 15px;
+	font-weight : bold;
+}
+#noteconbox{
+	width : 90px;
+	height : 63px;
+	border: 1px solid white;
+	float : right;
+	float : left;
+	padding-left : 0px;
+	padding-top : 10px;
+	}
+#notecon{
+	width : 54px;
+	height: 35px;
+	margin-left : 18px;
+}
+#notetext{
+	width :100px;
+	font-size : 13px;
+	font-weight : bold;
+	text-align : left;
+	margin-top : 3px;
+	margin-left : 13px;
+}
+#peoconbox{
+	width : 71px;
+	height : 64px;
+	border: 1px solid white;
+	float : right;
+	float : left;
+	padding : 8px;
+	padding-top : 0px;
+	}
+#peocon{
+	width : 50px;
+	height: 30px;
+	margin : 17px;
+	margin-left : 10px;
+	margin-bottom : 0px;	
+}
+#peotext{
+	width : 70px;
+	margin-left : 21px;
+	font-size : 15px;
+	font-weight : bold;
+}
+#dotconbox{
+	width : 71px;
+	height : 52px;
+	border: 1px solid white;
+	float : right;
+	padding-right : 10px;
+	padding-left : 10px;
+	padding-top : 20px;
+	}
+#dotcon{
+	width : 70px;
+	height: 20px;
+	
+}
+#dottext{
+	width : 75px;
+	margin-left : 10px;
+	font-size : 15px;
+	font-weight : bold;
+}
+</style>
+</head>
+<body>
+<div class="top">
+<div id="title">더보기</div>
+<img src="image/dot_05.png" id="wheel">
+</div>
+<div class="profile">
+<img src="image/profile_02.png" id="myimg">
+<div id="name">유지수(@jjrob)</div>
+<div id="direction"><img id="directionimg" src="image/cancle_04.png"></div>
+</div><hr width="370px">
+<div class="menu">
+<div id="friends">
+<img src="image/dot_01.png" id="friendsicon">
+<div id="fretitle">친구</div
+></div>
+<div id="messages"><img src="image/dot_02.png" id="msgicon">
+<div id="msgtitle">쪽지</div>
+</div>
+<div id="stamps"><img src="image/dot_03.png" id="stampicon">
+<div id="stamptitle">스탬프</div></div>
+<div id="events"><img src="image/dot_04.png" id="eventicon">
+<div id="eventtitle">이벤트</div>
+</div>
+</div><hr width="370px">
+<div class="mainbox">
+<div class="info">이용안내</div><hr>
+<div class="gong">
+<div id="gongtitle">공지사항</div>
+<div id="gongimg"><img src="image/cancle_04.png" id="gongimg2"></div>
+</div>
+<div class="qna">
+<div id="qnatitle">1:1문의</div>
+<div id="qnaimg"><img src="image/cancle_04.png" id="gongimg2"></div>
+</div>
+<div class="invent">
+<div id="inventtitle">초대하기</div>
+<div id="inventimg"><img src="image/cancle_04.png" id="gongimg2"></div>
+</div>
+<div class="service">
+<div id="servicetitle">서비스 소개</div>
+<div id="serviceimg"><img src="image/cancle_04.png" id="gongimg2"></div>
+</div></div>
+<div class="bottom">
+<div id="homeconbox">
+<a href="main.html" target="_self">
+<img id="homecon" src="image/bellow_01.png"></a>
+<div id="hometext">홈</div></div>
+<div id="noteconbox">
+<a href="mystory.html" target="_self">
+<img id="notecon" src="image/bellow_02.png"></a>
+<div id="notetext">마이스토리</div></div>
+<div id="peoconbox">
+<img id="peocon" src="image/bellow_03.png">
+<div id="peotext">공감</div></div>
+<div id="dotconbox">
+<a href="info.html" target="_self">
+<img id="dotcon" src="image/bellow_04.png"></a>
+<div id="dottext">더보기</div></div>
+</div>
+</body>
+</html>
